@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ze.io/shared/note/note.schema.json",
+  "title": "Note",
+  "description": "A JSON schema for a note in Ze. A note in Ze is a container for a Zettel and its metadata",
+  "type": "object"
+}

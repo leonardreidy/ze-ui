@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "http://ze.io/shared/note/link.schema.json",
+  "title": "Link",
+  "description": "A link to a related Zettel",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The unique identifier for the linked Zettel"
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the linked Zettel"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time the link was created."
+    },
+    "modified": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time the link was last modified."
+    },
+    "uri": {
+      "type": "string",
+      "description": "The URI of the linked Zettel"
+    }
+  }
+}
