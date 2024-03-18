@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ze.io/common/schemas/note/zettel.schema.json",
+  "title": "Zettel",
+  "description": "A JSON schema for a Zettel in Ze. A Zettel is a representation, in Ze, of an atomic unit of knowledge.",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "$ref": "./metadata.schema.json"
+    },
+    "header": {
+      "$ref": "./header.schema.json"
+    },
+    "body": {
+      "$ref": "./body.schema.json"
+    },
+    "footer": {
+      "$ref": "./footer.schema.json"
+    }
+  }
+}

@@ -5,13 +5,9 @@
   "description": "A JSON schema for a Zettel in Ze. A Zettel is a representation, in Ze, of an atomic unit of knowledge.",
   "type": "object",
   "properties": {
-    "id": {
+    "accessed": {
       "type": "string",
-      "description": "The unique identifier of the Zettel."
-    },
-    "name": {
-      "type": "string",
-      "description": "The title of the Zettel."
+      "description": "The date and time when the Zettel was last accessed."
     },
     "created": {
       "type": "string",
@@ -22,6 +18,10 @@
       "type": "string",
       "format": "date-time",
       "description": "The date and time when the Zettel was last modified."
+    },
+    "name": {
+      "type": "string",
+      "description": "The title of the Zettel."
     },
     "uri": {
       "type": "string",

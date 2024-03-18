@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://ze.io/common/schemas/zettel/header.schema.json",
+  "title": "Zettel Header",
+  "description": "The header of a zettel",
+  "type": "object",
+  "properties": {
+    "subtitle": {
+      "description": "The subtitle of the zettel",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title of the zettel",
+      "type": "string"
+    }
+  }
+}
