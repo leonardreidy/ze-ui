@@ -2,45 +2,14 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://ze.io/common/schemas/note/note.schema.json",
   "title": "Note",
-  "description": "In Ze, a note is a container for a Zettel, and its links, tags, metadata etc",
+  "description": "In Ze, a note is a container for a Zettel and its metadata",
   "type": "object",
   "properties": {
-    "accessed": {
-      "description": "The date and time the note was last accessed",
-      "type": "string"
-    },
-    "created": {
-      "description": "The date and time the note was created",
-      "type": "string"
-    },
-    "links": {
-      "description": "An array of links to other notes",
-      "type": "array",
-      "items": {
-        "$ref": "https://ze.io/common/schemas/note/link.schema.json"
-      }
-    },
-    "modified": {
-      "description": "The date and time the note was last modified",
-      "type": "string"
-    },
-    "tags": {
-      "description": "An array of tags",
-      "type": "array",
-      "items": {
-       "$ref": "https://ze.io/common/schemas/note/tag.schema.json"
-      }
-    },
-    "uid": {
-      "description": "A unique identifier for the note",
-      "type": "string"
-    },
-    "uri": {
-      "description": "The URI of the note",
-      "type": "string"
-    },
     "zettel": {
       "$ref": "https://ze.io/common/schemas/note/zettel.schema.json"
+    },
+    "metadata": {
+      "$ref": "https://ze.io/common/schemas/note/metadata.schema.json"
     }
   }
 }
