@@ -5,9 +5,6 @@
   "description": "A JSON schema for a Zettel in Ze. A Zettel is a representation, in Ze, of an atomic unit of knowledge.",
   "type": "object",
   "properties": {
-    "metadata": {
-      "$ref": "./metadata.schema.json"
-    },
     "header": {
       "$ref": "./header.schema.json"
     },
@@ -16,6 +13,9 @@
     },
     "footer": {
       "$ref": "./footer.schema.json"
-    }
+    },
+    "metadata": {
+      "$ref": "./metadata.schema.json"
+    },
   }
 }
