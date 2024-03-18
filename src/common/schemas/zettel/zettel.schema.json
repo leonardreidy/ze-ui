@@ -16,6 +16,6 @@
     },
     "metadata": {
       "$ref": "./metadata.schema.json"
-    },
+    }
   }
 }
