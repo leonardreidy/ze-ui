@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ze.io/common/schemas/note/tag.schema.json",
+  "title": "Tag",
+  "description": "A JSON schema for a Tag in Ze.",
+  "type": "object",
+  "properties": {
+    "accessed": {
+      "type": "string",
+      "description": "The date and time when the Zettel was last accessed."
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the Zettel was created."
+    },
+    "modified": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the Zettel was last modified."
+    },
+    "name": {
+      "type": "string",
+      "description": "The title of the Zettel."
+    },
+    "uri": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URI of the Zettel."
+    }
+  }
+}

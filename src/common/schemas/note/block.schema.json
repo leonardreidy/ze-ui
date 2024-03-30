@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://ze.io/common/schemas/note/block.schema.json",
+  "title": "Note block (paragraph)",
+  "description": "A single block of a note body",
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "string",
+      "description": "The content of a single block (e.g. paragraph) of a note"
+    }
+  }
+}

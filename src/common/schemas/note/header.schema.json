@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://ze.io/common/schemas/note/header.schema.json",
+  "title": "Note Header",
+  "description": "The header of a note",
+  "type": "object",
+  "properties": {
+    "subtitle": {
+      "description": "The subtitle of the note",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title of the note",
+      "type": "string"
+    }
+  }
+}
