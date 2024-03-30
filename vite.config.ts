@@ -17,7 +17,12 @@ export default defineConfig(({ command, mode }: ConfigEnv) => {
     return {
       // dev config
       server: {
+        // Set port dynamically if available from env or fallback to default
         port: Number(env.PORT) ?? 5173,
+        // Exit if port is already in use, instead of automatically trying the next available port.
+        // For harmonizing with Docker which expects to forward specific ports at least for now.
+        // We'll revisit this later!
+        strictPort: true,
       }
     }
   } else {
