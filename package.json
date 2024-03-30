@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "install": "npm install",
     "preview": "vite preview"
   },
   "devDependencies": {
