@@ -10,8 +10,18 @@ designed. It is fast, highly configurable and widely approved.
 
 ### Config
 
-When running vite from the command line, Vite will automatically try to resolve a config file named vite.config.js inside project root (other JS and TS extensions are also supported).
+When running vite from the command line, Vite will automatically try to resolve a config file named vite.config.js inside project root 
+(other JS and TS extensions are also supported).
 
 ## Getting started
-If you are spinning this up as a devcontainer this is largely managed for you. The only thing you will need to do once the container is up
-and running is to install the dependencies. This project uses `npm` not `yarn`. 
+If you are spinning this up as a devcontainer this is largely managed for you. Use the following steps to get the UI server running. 
+
+### Steps
+
+
+### Notes
+See `postStartCommand` of the project devcontainer for workaround to address Git dubious ownership errors that crop up typically in 
+devcontainers because of their separation from the filesystem they belong to. To understand this in more depth see the following
+article: 
+
+https://www.kenmuse.com/blog/avoiding-dubious-ownership-in-dev-containers/
